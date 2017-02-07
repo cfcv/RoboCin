@@ -126,10 +126,10 @@ Mat TrackUniqueObject(Mat thresholded, tObjs T){
 
         Mat drawing = Mat::zeros(thresholded.size(), CV_8UC3);
 
-        for (int i = 0; i < contours.size(); i++) {
+        //for (int i = 0; i < contours.size(); i++) {
             //Para cada contorno encontrado, o desenhamos na imagem drawing
-            drawContours(drawing, contours, i, Scalar(Objs[T].blue, Objs[T].green, Objs[T].red), 2, 8, hierarchy, 0, Point());
-          }
+            //drawContours(drawing, contours, i, Scalar(Objs[T].blue, Objs[T].green, Objs[T].red), 2, 8, hierarchy, 0, Point());
+          //}
              if(contours.size() > 0){
 
                   Moments momObj = moments(contours.at(contours.size()-1), false);
@@ -171,9 +171,9 @@ Mat TrackNotUniqueObject(Mat thresholded1, Mat thresholded2, tObjs T){
 
         Mat drawing = Mat::zeros(fusao.size(), CV_8UC3);
 
-        for (int i = 0; i < contours.size(); i++) {
-            drawContours(drawing, contours, i, Scalar(Objs[T].blue, Objs[T].green, Objs[T].red), 2, 8, hierarchy, 0, Point());
-        }
+        //for (int i = 0; i < contours.size(); i++) {
+           // drawContours(drawing, contours, i, Scalar(Objs[T].blue, Objs[T].green, Objs[T].red), 2, 8, hierarchy, 0, Point());
+        //}
              if(contours.size() > 0){
                 int maiorA = 0;
                 int k = -1;
