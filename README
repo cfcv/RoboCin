@@ -1,1 +1,1 @@
-Tracking dos objetos do video, suas posicoes sao gravadas em um arquivo em cada frame.
+Tracking of all objects in the video. The position of each object is written in a file on every frame.
